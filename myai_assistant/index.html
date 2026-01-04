@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyAI Assistant</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <img src="assets/logo.png" alt="MyAI Assistant Logo" class="logo">
+        <h1>Welcome to MyAI Assistant</h1>
+        <nav>
+            <ul>
+                <li><a href="#tasks">Tasks</a></li>
+                <li><a href="#schedule">Schedule</a></li>
+                <li><a href="#info">Information</a></li>
+                <li><a href="#voice">Voice</a></li>
+                <li><a href="#auth">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="tasks">
+            <h2>Task Management</h2>
+            <div class="task-manager">
+                <input type="text" id="new-task" placeholder="Enter a new task...">
+                <button onclick="addTask()">Add Task</button>
+                <ul id="task-list"></ul>
+            </div>
+        </section>
+        <section id="schedule">
+            <h2>Schedule</h2>
+            <div class="scheduler">
+                <input type="text" id="new-event" placeholder="Enter a new event...">
+                <button onclick="addEvent()">Add Event</button>
+                <ul id="event-list"></ul>
+            </div>
+        </section>
+        <section id="info">
+            <h2>Information Retrieval</h2>
+            <div class="info-retrieval">
+                <input type="text" id="info-query" placeholder="Ask a question...">
+                <button onclick="getInfo()">Get Info</button>
+                <div id="info-result"></div>
+            </div>
+        </section>
+        <section id="voice">
+            <h2>Voice Interaction</h2>
+            <div class="voice-interaction">
+                <button onclick="startVoiceCommand()">Start Voice Command</button>
+                <div id="voice-result"></div>
+            </div>
+        </section>
+        <section id="auth">
+            <h2>User Authentication</h2>
+            <div class="auth">
+                <input type="text" id="username" placeholder="Username">
+                <input type="password" id="password" placeholder="Password">
+                <button onclick="login()">Login</button>
+                <button onclick="register()">Register</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 MyAI Assistant. All rights reserved.</p>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>
